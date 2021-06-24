@@ -1,0 +1,6 @@
+framework module Pods_FlixFind_FlixFindUITests {
+  umbrella header "Pods-FlixFind-FlixFindUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

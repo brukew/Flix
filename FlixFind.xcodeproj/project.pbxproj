@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AF2D8DD268516C700E06E05 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2D8DC268516C700E06E05 /* DetailsViewController.m */; };
+		41399BE30ACB12AE962B049E /* Pods_FlixFind_FlixFindUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF70A5D6CE3D2A2EFC10CA /* Pods_FlixFind_FlixFindUITests.framework */; };
+		B867B3496C270F7B1E299206 /* Pods_FlixFindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E924B214CC88DD7C79830E /* Pods_FlixFindTests.framework */; };
+		F36B1B80268390A3002EAEE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1B7F268390A3002EAEE5 /* AppDelegate.m */; };
+		F36B1B83268390A3002EAEE5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1B82268390A3002EAEE5 /* SceneDelegate.m */; };
+		F36B1B89268390A3002EAEE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36B1B87268390A3002EAEE5 /* Main.storyboard */; };
+		F36B1B8B268390A7002EAEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36B1B8A268390A7002EAEE5 /* Assets.xcassets */; };
+		F36B1B8E268390A7002EAEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F36B1B8C268390A7002EAEE5 /* LaunchScreen.storyboard */; };
+		F36B1B91268390A7002EAEE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1B90268390A7002EAEE5 /* main.m */; };
+		F36B1B9B268390A8002EAEE5 /* FlixFindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1B9A268390A8002EAEE5 /* FlixFindTests.m */; };
+		F36B1BA6268390A8002EAEE5 /* FlixFindUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1BA5268390A8002EAEE5 /* FlixFindUITests.m */; };
+		F36B1BB826839C02002EAEE5 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1BB726839C02002EAEE5 /* MoviesViewController.m */; };
+		F36B1BC72683D9D3002EAEE5 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1BC62683D9D3002EAEE5 /* MovieCell.m */; };
+		F42B1D60F0474BD90AB2265B /* Pods_FlixFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA4A0D23A5606860A8EDB2F /* Pods_FlixFind.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F36B1B97268390A8002EAEE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F36B1B73268390A3002EAEE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36B1B7A268390A3002EAEE5;
+			remoteInfo = FlixFind;
+		};
+		F36B1BA2268390A8002EAEE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F36B1B73268390A3002EAEE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F36B1B7A268390A3002EAEE5;
+			remoteInfo = FlixFind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1228114E89FDB8FEB1477B93 /* Pods-FlixFind-FlixFindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFind-FlixFindUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlixFind-FlixFindUITests/Pods-FlixFind-FlixFindUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AF2D8DB268516C700E06E05 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		1AF2D8DC268516C700E06E05 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		3FEE4C3C12B4FD96349EF02F /* Pods-FlixFindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFindTests.release.xcconfig"; path = "Target Support Files/Pods-FlixFindTests/Pods-FlixFindTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B7853FB5A4B06B777DBC32D /* Pods-FlixFind-FlixFindUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFind-FlixFindUITests.release.xcconfig"; path = "Target Support Files/Pods-FlixFind-FlixFindUITests/Pods-FlixFind-FlixFindUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7DB838E1C0B575D7FE595720 /* Pods-FlixFindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFindTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixFindTests/Pods-FlixFindTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9734C728BC28788C16B9195D /* Pods-FlixFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFind.release.xcconfig"; path = "Target Support Files/Pods-FlixFind/Pods-FlixFind.release.xcconfig"; sourceTree = "<group>"; };
+		9FA4A0D23A5606860A8EDB2F /* Pods_FlixFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EF70A5D6CE3D2A2EFC10CA /* Pods_FlixFind_FlixFindUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixFind_FlixFindUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD26953623D9E47D4376464 /* Pods-FlixFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFind.debug.xcconfig"; path = "Target Support Files/Pods-FlixFind/Pods-FlixFind.debug.xcconfig"; sourceTree = "<group>"; };
+		F36B1B7B268390A3002EAEE5 /* FlixFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlixFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36B1B7E268390A3002EAEE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F36B1B7F268390A3002EAEE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F36B1B81268390A3002EAEE5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F36B1B82268390A3002EAEE5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F36B1B88268390A3002EAEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F36B1B8A268390A7002EAEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F36B1B8D268390A7002EAEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F36B1B8F268390A7002EAEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36B1B90268390A7002EAEE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F36B1B96268390A8002EAEE5 /* FlixFindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixFindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36B1B9A268390A8002EAEE5 /* FlixFindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlixFindTests.m; sourceTree = "<group>"; };
+		F36B1B9C268390A8002EAEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36B1BA1268390A8002EAEE5 /* FlixFindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixFindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F36B1BA5268390A8002EAEE5 /* FlixFindUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlixFindUITests.m; sourceTree = "<group>"; };
+		F36B1BA7268390A8002EAEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36B1BB626839C02002EAEE5 /* MoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		F36B1BB726839C02002EAEE5 /* MoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		F36B1BC52683D9D3002EAEE5 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		F36B1BC62683D9D3002EAEE5 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		F7E924B214CC88DD7C79830E /* Pods_FlixFindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixFindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F36B1B78268390A3002EAEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42B1D60F0474BD90AB2265B /* Pods_FlixFind.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B1B93268390A8002EAEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B867B3496C270F7B1E299206 /* Pods_FlixFindTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B1B9E268390A8002EAEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41399BE30ACB12AE962B049E /* Pods_FlixFind_FlixFindUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12C0934A17FD5DA89DFB3632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA4A0D23A5606860A8EDB2F /* Pods_FlixFind.framework */,
+				D7EF70A5D6CE3D2A2EFC10CA /* Pods_FlixFind_FlixFindUITests.framework */,
+				F7E924B214CC88DD7C79830E /* Pods_FlixFindTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C60159F90BF9CA50856DB905 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDD26953623D9E47D4376464 /* Pods-FlixFind.debug.xcconfig */,
+				9734C728BC28788C16B9195D /* Pods-FlixFind.release.xcconfig */,
+				1228114E89FDB8FEB1477B93 /* Pods-FlixFind-FlixFindUITests.debug.xcconfig */,
+				7B7853FB5A4B06B777DBC32D /* Pods-FlixFind-FlixFindUITests.release.xcconfig */,
+				7DB838E1C0B575D7FE595720 /* Pods-FlixFindTests.debug.xcconfig */,
+				3FEE4C3C12B4FD96349EF02F /* Pods-FlixFindTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F36B1B72268390A3002EAEE5 = {
+			isa = PBXGroup;
+			children = (
+				F36B1B7D268390A3002EAEE5 /* FlixFind */,
+				F36B1B99268390A8002EAEE5 /* FlixFindTests */,
+				F36B1BA4268390A8002EAEE5 /* FlixFindUITests */,
+				F36B1B7C268390A3002EAEE5 /* Products */,
+				C60159F90BF9CA50856DB905 /* Pods */,
+				12C0934A17FD5DA89DFB3632 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F36B1B7C268390A3002EAEE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F36B1B7B268390A3002EAEE5 /* FlixFind.app */,
+				F36B1B96268390A8002EAEE5 /* FlixFindTests.xctest */,
+				F36B1BA1268390A8002EAEE5 /* FlixFindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F36B1B7D268390A3002EAEE5 /* FlixFind */ = {
+			isa = PBXGroup;
+			children = (
+				F36B1BBE26839F35002EAEE5 /* Models */,
+				F36B1BBD26839F2F002EAEE5 /* Views */,
+				F36B1BBC26839F20002EAEE5 /* View Controllers */,
+				F36B1B7E268390A3002EAEE5 /* AppDelegate.h */,
+				F36B1B7F268390A3002EAEE5 /* AppDelegate.m */,
+				F36B1B81268390A3002EAEE5 /* SceneDelegate.h */,
+				F36B1B82268390A3002EAEE5 /* SceneDelegate.m */,
+				F36B1B87268390A3002EAEE5 /* Main.storyboard */,
+				F36B1B8A268390A7002EAEE5 /* Assets.xcassets */,
+				F36B1B8C268390A7002EAEE5 /* LaunchScreen.storyboard */,
+				F36B1B8F268390A7002EAEE5 /* Info.plist */,
+				F36B1B90268390A7002EAEE5 /* main.m */,
+			);
+			path = FlixFind;
+			sourceTree = "<group>";
+		};
+		F36B1B99268390A8002EAEE5 /* FlixFindTests */ = {
+			isa = PBXGroup;
+			children = (
+				F36B1B9A268390A8002EAEE5 /* FlixFindTests.m */,
+				F36B1B9C268390A8002EAEE5 /* Info.plist */,
+			);
+			path = FlixFindTests;
+			sourceTree = "<group>";
+		};
+		F36B1BA4268390A8002EAEE5 /* FlixFindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F36B1BA5268390A8002EAEE5 /* FlixFindUITests.m */,
+				F36B1BA7268390A8002EAEE5 /* Info.plist */,
+			);
+			path = FlixFindUITests;
+			sourceTree = "<group>";
+		};
+		F36B1BBC26839F20002EAEE5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AF2D8DB268516C700E06E05 /* DetailsViewController.h */,
+				1AF2D8DC268516C700E06E05 /* DetailsViewController.m */,
+				F36B1BB626839C02002EAEE5 /* MoviesViewController.h */,
+				F36B1BB726839C02002EAEE5 /* MoviesViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F36B1BBD26839F2F002EAEE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F36B1BC52683D9D3002EAEE5 /* MovieCell.h */,
+				F36B1BC62683D9D3002EAEE5 /* MovieCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F36B1BBE26839F35002EAEE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F36B1B7A268390A3002EAEE5 /* FlixFind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36B1BAA268390A8002EAEE5 /* Build configuration list for PBXNativeTarget "FlixFind" */;
+			buildPhases = (
+				6DCE2FAFCF2E71584915196E /* [CP] Check Pods Manifest.lock */,
+				F36B1B77268390A3002EAEE5 /* Sources */,
+				F36B1B78268390A3002EAEE5 /* Frameworks */,
+				F36B1B79268390A3002EAEE5 /* Resources */,
+				2447C18BFED9BBAE5E43E7E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlixFind;
+			productName = FlixFind;
+			productReference = F36B1B7B268390A3002EAEE5 /* FlixFind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F36B1B95268390A8002EAEE5 /* FlixFindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36B1BAD268390A8002EAEE5 /* Build configuration list for PBXNativeTarget "FlixFindTests" */;
+			buildPhases = (
+				605A61D8292F679877C9F768 /* [CP] Check Pods Manifest.lock */,
+				F36B1B92268390A8002EAEE5 /* Sources */,
+				F36B1B93268390A8002EAEE5 /* Frameworks */,
+				F36B1B94268390A8002EAEE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F36B1B98268390A8002EAEE5 /* PBXTargetDependency */,
+			);
+			name = FlixFindTests;
+			productName = FlixFindTests;
+			productReference = F36B1B96268390A8002EAEE5 /* FlixFindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F36B1BA0268390A8002EAEE5 /* FlixFindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36B1BB0268390A8002EAEE5 /* Build configuration list for PBXNativeTarget "FlixFindUITests" */;
+			buildPhases = (
+				456B99360D1769C1C7286F7B /* [CP] Check Pods Manifest.lock */,
+				F36B1B9D268390A8002EAEE5 /* Sources */,
+				F36B1B9E268390A8002EAEE5 /* Frameworks */,
+				F36B1B9F268390A8002EAEE5 /* Resources */,
+				348695A5F788A7A2AE717000 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F36B1BA3268390A8002EAEE5 /* PBXTargetDependency */,
+			);
+			name = FlixFindUITests;
+			productName = FlixFindUITests;
+			productReference = F36B1BA1268390A8002EAEE5 /* FlixFindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F36B1B73268390A3002EAEE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					F36B1B7A268390A3002EAEE5 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					F36B1B95268390A8002EAEE5 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = F36B1B7A268390A3002EAEE5;
+					};
+					F36B1BA0268390A8002EAEE5 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = F36B1B7A268390A3002EAEE5;
+					};
+				};
+			};
+			buildConfigurationList = F36B1B76268390A3002EAEE5 /* Build configuration list for PBXProject "FlixFind" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F36B1B72268390A3002EAEE5;
+			productRefGroup = F36B1B7C268390A3002EAEE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F36B1B7A268390A3002EAEE5 /* FlixFind */,
+				F36B1B95268390A8002EAEE5 /* FlixFindTests */,
+				F36B1BA0268390A8002EAEE5 /* FlixFindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F36B1B79268390A3002EAEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B1B8E268390A7002EAEE5 /* LaunchScreen.storyboard in Resources */,
+				F36B1B8B268390A7002EAEE5 /* Assets.xcassets in Resources */,
+				F36B1B89268390A3002EAEE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B1B94268390A8002EAEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B1B9F268390A8002EAEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2447C18BFED9BBAE5E43E7E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixFind/Pods-FlixFind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixFind/Pods-FlixFind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixFind/Pods-FlixFind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		348695A5F788A7A2AE717000 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixFind-FlixFindUITests/Pods-FlixFind-FlixFindUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlixFind-FlixFindUITests/Pods-FlixFind-FlixFindUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlixFind-FlixFindUITests/Pods-FlixFind-FlixFindUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		456B99360D1769C1C7286F7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixFind-FlixFindUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		605A61D8292F679877C9F768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixFindTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DCE2FAFCF2E71584915196E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixFind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F36B1B77268390A3002EAEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B1B80268390A3002EAEE5 /* AppDelegate.m in Sources */,
+				F36B1BC72683D9D3002EAEE5 /* MovieCell.m in Sources */,
+				F36B1BB826839C02002EAEE5 /* MoviesViewController.m in Sources */,
+				1AF2D8DD268516C700E06E05 /* DetailsViewController.m in Sources */,
+				F36B1B91268390A7002EAEE5 /* main.m in Sources */,
+				F36B1B83268390A3002EAEE5 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B1B92268390A8002EAEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B1B9B268390A8002EAEE5 /* FlixFindTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36B1B9D268390A8002EAEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36B1BA6268390A8002EAEE5 /* FlixFindUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F36B1B98268390A8002EAEE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36B1B7A268390A3002EAEE5 /* FlixFind */;
+			targetProxy = F36B1B97268390A8002EAEE5 /* PBXContainerItemProxy */;
+		};
+		F36B1BA3268390A8002EAEE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F36B1B7A268390A3002EAEE5 /* FlixFind */;
+			targetProxy = F36B1BA2268390A8002EAEE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F36B1B87268390A3002EAEE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F36B1B88268390A3002EAEE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F36B1B8C268390A7002EAEE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F36B1B8D268390A7002EAEE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F36B1BA8268390A8002EAEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F36B1BA9268390A8002EAEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F36B1BAB268390A8002EAEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD26953623D9E47D4376464 /* Pods-FlixFind.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FF9MKP5LW;
+				INFOPLIST_FILE = FlixFind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brukewossenseged.FlixFind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F36B1BAC268390A8002EAEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9734C728BC28788C16B9195D /* Pods-FlixFind.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FF9MKP5LW;
+				INFOPLIST_FILE = FlixFind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brukewossenseged.FlixFind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F36B1BAE268390A8002EAEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB838E1C0B575D7FE595720 /* Pods-FlixFindTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FF9MKP5LW;
+				INFOPLIST_FILE = FlixFindTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brukewossenseged.FlixFindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixFind.app/FlixFind";
+			};
+			name = Debug;
+		};
+		F36B1BAF268390A8002EAEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FEE4C3C12B4FD96349EF02F /* Pods-FlixFindTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FF9MKP5LW;
+				INFOPLIST_FILE = FlixFindTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brukewossenseged.FlixFindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlixFind.app/FlixFind";
+			};
+			name = Release;
+		};
+		F36B1BB1268390A8002EAEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1228114E89FDB8FEB1477B93 /* Pods-FlixFind-FlixFindUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FF9MKP5LW;
+				INFOPLIST_FILE = FlixFindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brukewossenseged.FlixFindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlixFind;
+			};
+			name = Debug;
+		};
+		F36B1BB2268390A8002EAEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7853FB5A4B06B777DBC32D /* Pods-FlixFind-FlixFindUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FF9MKP5LW;
+				INFOPLIST_FILE = FlixFindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brukewossenseged.FlixFindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlixFind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F36B1B76268390A3002EAEE5 /* Build configuration list for PBXProject "FlixFind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36B1BA8268390A8002EAEE5 /* Debug */,
+				F36B1BA9268390A8002EAEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36B1BAA268390A8002EAEE5 /* Build configuration list for PBXNativeTarget "FlixFind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36B1BAB268390A8002EAEE5 /* Debug */,
+				F36B1BAC268390A8002EAEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36B1BAD268390A8002EAEE5 /* Build configuration list for PBXNativeTarget "FlixFindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36B1BAE268390A8002EAEE5 /* Debug */,
+				F36B1BAF268390A8002EAEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36B1BB0268390A8002EAEE5 /* Build configuration list for PBXNativeTarget "FlixFindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F36B1BB1268390A8002EAEE5 /* Debug */,
+				F36B1BB2268390A8002EAEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F36B1B73268390A3002EAEE5 /* Project object */;
+}
