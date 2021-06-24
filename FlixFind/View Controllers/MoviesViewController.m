@@ -35,13 +35,34 @@
 }
 
 - (void)fetchMovies {
-    
+    UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc]
+            initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+
+    activityView.center=self.view.center;
+    [activityView startAnimating];
+    [self.view addSubview:activityView];
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=83e46c623b2351b9546f239c2f2723b1"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
            if (error != nil) {
                NSLog(@"%@", [error localizedDescription]);
+                UIAlertController *alert =
+                  [UIAlertController alertControllerWithTitle:@"Cannot Get Movies"
+                   message:@"The Internet connection seems to be offline."
+                   preferredStyle:(UIAlertControllerStyleAlert)];
+               // create a cancel action
+               UIAlertAction *tryAgainAction =
+                  [UIAlertAction actionWithTitle:@"Try Again"
+                                style:UIAlertActionStyleCancel
+                                handler:^(UIAlertAction * _Nonnull action) {
+                                    [self fetchMovies];
+                                                                 }];
+               // add the cancel action to the alertController
+               [alert addAction:tryAgainAction];
+               [self presentViewController:alert animated:YES completion:^{
+                   [activityView stopAnimating];
+               }];
            }
            else {
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -52,6 +73,7 @@
                for (NSDictionary *movie in self.movies){
                    NSLog(@"%@", movie[@"title"]);
                }
+               [activityView stopAnimating];
                [self.tableView reloadData];
            }
         [self.refreshControl endRefreshing];
