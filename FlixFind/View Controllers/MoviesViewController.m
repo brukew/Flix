@@ -28,6 +28,8 @@
    
     [self fetchMovies];
     
+    
+    
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(fetchMovies)
                   forControlEvents:UIControlEventValueChanged];
