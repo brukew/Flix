@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1AF2D8DD268516C700E06E05 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2D8DC268516C700E06E05 /* DetailsViewController.m */; };
+		1AF2D8E026854EEA00E06E05 /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2D8DF26854EEA00E06E05 /* MoviesGridViewController.m */; };
+		1AF2D8E3268550C800E06E05 /* MovieCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF2D8E2268550C800E06E05 /* MovieCollectionCell.m */; };
 		41399BE30ACB12AE962B049E /* Pods_FlixFind_FlixFindUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7EF70A5D6CE3D2A2EFC10CA /* Pods_FlixFind_FlixFindUITests.framework */; };
 		B867B3496C270F7B1E299206 /* Pods_FlixFindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E924B214CC88DD7C79830E /* Pods_FlixFindTests.framework */; };
 		F36B1B80268390A3002EAEE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F36B1B7F268390A3002EAEE5 /* AppDelegate.m */; };
@@ -44,6 +46,10 @@
 		1228114E89FDB8FEB1477B93 /* Pods-FlixFind-FlixFindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFind-FlixFindUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlixFind-FlixFindUITests/Pods-FlixFind-FlixFindUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1AF2D8DB268516C700E06E05 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		1AF2D8DC268516C700E06E05 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		1AF2D8DE26854EEA00E06E05 /* MoviesGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesGridViewController.h; sourceTree = "<group>"; };
+		1AF2D8DF26854EEA00E06E05 /* MoviesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesGridViewController.m; sourceTree = "<group>"; };
+		1AF2D8E1268550C800E06E05 /* MovieCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionCell.h; sourceTree = "<group>"; };
+		1AF2D8E2268550C800E06E05 /* MovieCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionCell.m; sourceTree = "<group>"; };
 		3FEE4C3C12B4FD96349EF02F /* Pods-FlixFindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFindTests.release.xcconfig"; path = "Target Support Files/Pods-FlixFindTests/Pods-FlixFindTests.release.xcconfig"; sourceTree = "<group>"; };
 		7B7853FB5A4B06B777DBC32D /* Pods-FlixFind-FlixFindUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFind-FlixFindUITests.release.xcconfig"; path = "Target Support Files/Pods-FlixFind-FlixFindUITests/Pods-FlixFind-FlixFindUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7DB838E1C0B575D7FE595720 /* Pods-FlixFindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixFindTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixFindTests/Pods-FlixFindTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +195,8 @@
 			children = (
 				1AF2D8DB268516C700E06E05 /* DetailsViewController.h */,
 				1AF2D8DC268516C700E06E05 /* DetailsViewController.m */,
+				1AF2D8DE26854EEA00E06E05 /* MoviesGridViewController.h */,
+				1AF2D8DF26854EEA00E06E05 /* MoviesGridViewController.m */,
 				F36B1BB626839C02002EAEE5 /* MoviesViewController.h */,
 				F36B1BB726839C02002EAEE5 /* MoviesViewController.m */,
 			);
@@ -200,6 +208,8 @@
 			children = (
 				F36B1BC52683D9D3002EAEE5 /* MovieCell.h */,
 				F36B1BC62683D9D3002EAEE5 /* MovieCell.m */,
+				1AF2D8E1268550C800E06E05 /* MovieCollectionCell.h */,
+				1AF2D8E2268550C800E06E05 /* MovieCollectionCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -452,8 +462,10 @@
 				F36B1BC72683D9D3002EAEE5 /* MovieCell.m in Sources */,
 				F36B1BB826839C02002EAEE5 /* MoviesViewController.m in Sources */,
 				1AF2D8DD268516C700E06E05 /* DetailsViewController.m in Sources */,
+				1AF2D8E3268550C800E06E05 /* MovieCollectionCell.m in Sources */,
 				F36B1B91268390A7002EAEE5 /* main.m in Sources */,
 				F36B1B83268390A3002EAEE5 /* SceneDelegate.m in Sources */,
+				1AF2D8E026854EEA00E06E05 /* MoviesGridViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
