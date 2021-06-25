@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *movies;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) NSArray *filteredMovies;
 
 @end
 
@@ -25,6 +27,7 @@
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    self.searchBar.delegate = self;
    
     [self fetchMovies];
     
@@ -72,9 +75,10 @@
                //NSLog(@"%@", dataDictionary);
                
                self.movies = dataDictionary[@"results"];
-               for (NSDictionary *movie in self.movies){
+               /*for (NSDictionary *movie in self.movies){
                    NSLog(@"%@", movie[@"title"]);
-               }
+               }*/
+               self.filteredMovies = self.movies;
                [activityView stopAnimating];
                [self.tableView reloadData];
            }
@@ -85,20 +89,24 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.movies.count;
+    return self.filteredMovies.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     
-    NSDictionary *movie = self.movies[indexPath.row];
+    cell.layer.cornerRadius = 5;
+    cell.layer.masksToBounds = YES;
+    
+    NSDictionary *movie = self.filteredMovies[indexPath.row];
     cell.titleLabel.text = movie[@"title"];
     cell.synLabel.text = movie[@"overview"];
    // cell.textLabel.text = movie[@"title"];
     
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = movie[@"poster_path"];
-    NSString *fullPosterURLString = [baseURLString stringByAppendingFormat: posterURLString];
+    NSLog(@"%@", posterURLString);
+    NSString *fullPosterURLString = [baseURLString stringByAppendingFormat: @"%@", posterURLString];
     NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
     cell.posterView.image = nil;
     [cell.posterView setImageWithURL:posterURL];
@@ -106,6 +114,25 @@
     
     
     return cell;
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+        if (searchText.length != 0) {
+        
+        NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(NSDictionary *evaluatedObject, NSDictionary *bindings) {
+            return [evaluatedObject[@"title"] containsString:searchText];
+        }];
+        self.filteredMovies = [self.movies filteredArrayUsingPredicate:predicate];
+        
+        NSLog(@"%@", self.filteredMovies);
+        
+    }
+    else {
+        self.filteredMovies = self.movies;
+    }
+    
+    [self.tableView reloadData];
+ 
 }
 
 #pragma mark - Navigation
