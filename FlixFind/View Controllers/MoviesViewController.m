@@ -72,7 +72,7 @@
            else {
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
 
-               //NSLog(@"%@", dataDictionary);
+               NSLog(@"%@", dataDictionary);
                
                self.movies = dataDictionary[@"results"];
                /*for (NSDictionary *movie in self.movies){
@@ -95,17 +95,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     
-    cell.layer.cornerRadius = 5;
-    cell.layer.masksToBounds = YES;
+    cell.layer.cornerRadius = 10;
+    cell.posterView.layer.cornerRadius = 10;
+    cell.posterView.clipsToBounds = YES;
     
     NSDictionary *movie = self.filteredMovies[indexPath.row];
     cell.titleLabel.text = movie[@"title"];
     cell.synLabel.text = movie[@"overview"];
-   // cell.textLabel.text = movie[@"title"];
-    
+   /* NSInteger *ratingValue = [(NSNumber * ) movie[@"vote_average"] doubleValue];(*/
+    cell.ratingLabel.text = [NSString stringWithFormat:@"%.1f", [(NSNumber * ) movie[@"vote_average"] doubleValue]];
     NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = movie[@"poster_path"];
-    NSLog(@"%@", posterURLString);
     NSString *fullPosterURLString = [baseURLString stringByAppendingFormat: @"%@", posterURLString];
     NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
     cell.posterView.image = nil;
